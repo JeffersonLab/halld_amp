@@ -29,7 +29,7 @@ Double_t sigma_ggpi0pi0_func (Double_t *x, Double_t *par){
     // parin[x] = mu;                // parameter 2: mean of Fermi Function. simplify to 2 parameters
     // parin[1] = kT              // parameter 3: transition parameter
     
-  Double_t MPI = ParticleMass(Pi0);
+    Double_t MPI = 0.1349766;   // known pi0 mass
     // Double_t PI=3.14159;
     
     Double_t A  = par[0];

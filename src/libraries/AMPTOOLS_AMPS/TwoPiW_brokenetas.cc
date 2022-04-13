@@ -10,8 +10,6 @@
 #include "barrierFactor.h"
 #include "breakupMomentum.h"
 
-#include "particleType.h"
-
 #include "IUAmpTools/Kinematics.h"
 #include "AMPTOOLS_AMPS/TwoPiW_brokenetas.h"
 

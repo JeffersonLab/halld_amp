@@ -4,8 +4,6 @@
 #include <vector>
 #include "IUAmpTools/Kinematics.h"
 
-#include "particleType.h"
-
 
 /**                                                                                                                                 
  * This class writes events passed in the Kinematics data type (see AmpTools)

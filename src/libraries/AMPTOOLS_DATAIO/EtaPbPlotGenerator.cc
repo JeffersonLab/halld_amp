@@ -6,7 +6,6 @@
 #include "AMPTOOLS_DATAIO/EtaPbPlotGenerator.h"
 #include "IUAmpTools/Histogram1D.h"
 #include "IUAmpTools/Kinematics.h"
-#include "particleType.h"
 
 /* Constructor to display FitResults */
 EtaPbPlotGenerator::EtaPbPlotGenerator( const FitResults& results ) :
@@ -39,7 +38,7 @@ EtaPbPlotGenerator::projectEvent( Kinematics* kin ){
   TLorentzVector p1 = kin->particle( 1 );
   TLorentzVector recoil = kin->particle( 2 );
 
-  Double_t kMZ = ParticleMass(Pb208);      //  use mass of Pb as it is in the particle table
+  Double_t kMZ = 193.72899;    // known mass of Pb208 from particleType.h
   TLorentzVector target  ( 0., 0., 0., kMZ);	
   
   TLorentzVector cm = recoil + p1;

@@ -9,7 +9,6 @@
 
 #include "barrierFactor.h"
 #include "breakupMomentum.h"
-#include "particleType.h"
 
 #include "IUAmpTools/Kinematics.h"
 #include "AMPTOOLS_AMPS/Lambda1520tdist.h"
@@ -39,7 +38,7 @@ complex< GDouble >
 Lambda1520tdist::calcAmplitude( GDouble** pKin ) const
 {
   TLorentzVector d1, d2;
-  TLorentzVector target( 0, 0, 0, ParticleMass(Proton) );
+  TLorentzVector target( 0, 0, 0, 0.938272046 );   // proton at rest
 
   // get momentum transfer
   d1.SetPxPyPzE (pKin[2][1], pKin[2][2], pKin[2][3], pKin[2][0]);   // daughter1 is particle 2
