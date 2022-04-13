@@ -13,7 +13,7 @@ if os.getenv('AMPTOOLS', 'nada')!='nada' and os.getenv('AMPPLOTTER', 'nada')!='n
    AMPTOOLS_LIBS = "AMPTOOLS_AMPS AMPTOOLS_DATAIO"
    env.AppendUnique(LIBS = AMPTOOLS_LIBS.split())
 
-   sbms.AddHDDM(env)
+   #sbms.AddHDDM(env)
    sbms.AddAmpTools(env)
    sbms.AddAmpPlotter(env)
    sbms.AddUtilities(env)
