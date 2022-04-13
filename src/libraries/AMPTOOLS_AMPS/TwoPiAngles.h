@@ -68,7 +68,8 @@ private:
   AmpParameter rho102;
   AmpParameter rho1m12;
 
-	GDouble polAngle;
+  AmpParameter polAngle;
+
 	GDouble polFraction;
     bool polInTree;
 	TH1D *polFrac_vs_E;
